@@ -1,0 +1,64 @@
+$head-font-stack: Montserrat, sans-serif;
+$body-font-stack: Inconsolata, monospace;
+$font-small: 1rem;
+$font-medium: 1.67rem;
+$font-large: 2.33rem;
+$font-xlarge: 3rem;
+
+$page-margin: 5%;
+$standard-padding: 2.5%;
+$sidebar-width: 20%;
+
+// testing purposes
+$color1: #eee;
+$color2: #ddd;
+$color3: #ccc;
+
+a {
+	text-decoration: none;
+}
+body {
+	margin: $page-margin;
+}
+.left {
+	background: $color1;
+	width: $sidebar-width;
+	float: left;
+	text-align: right;
+}
+.right {
+	background: $color2;
+	float: right;
+	width: 100% - $sidebar-width - ($page-margin);
+	text-align: left;
+}
+@media screen and (orientation: portrait) {
+	.left {
+		width: 100%;
+		text-align: left;
+	}
+	.right {
+		width: 100%
+	}
+}
+
+.info {
+	padding: $standard-padding;
+	.name {
+		font: $font-xlarge $head-font-stack;
+	}
+	.contact {
+		font: $font-small $body-font-stack;
+	}
+}
+
+.category {
+	font: $font-large $head-font-stack;
+	padding: $standard-padding;
+	.subcategory {
+		font: $font-medium $head-font-stack;
+		.content {
+			font: $font-small $body-font-stack;
+		}
+	}
+}

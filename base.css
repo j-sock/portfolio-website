@@ -1,0 +1,41 @@
+a {
+  text-decoration: none; }
+
+body {
+  margin: 5%; }
+
+.left {
+  background: #eee;
+  width: 20%;
+  float: left;
+  text-align: right; }
+
+.right {
+  background: #ddd;
+  float: right;
+  width: 75%;
+  text-align: left; }
+
+@media screen and (orientation: portrait) {
+  .left {
+    width: 100%;
+    text-align: left; }
+
+  .right {
+    width: 100%; } }
+.info {
+  padding: 2.5%; }
+  .info .name {
+    font: 3rem Montserrat, sans-serif; }
+  .info .contact {
+    font: 1rem Inconsolata, monospace; }
+
+.category {
+  font: 2.33rem Montserrat, sans-serif;
+  padding: 2.5%; }
+  .category .subcategory {
+    font: 1.67rem Montserrat, sans-serif; }
+    .category .subcategory .content {
+      font: 1rem Inconsolata, monospace; }
+
+/*# sourceMappingURL=base.css.map */
